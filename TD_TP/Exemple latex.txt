@@ -1,0 +1,165 @@
+\documentclass[a4paper, 12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{sectsty}
+\usepackage{colortbl}
+\usepackage{tabularx}
+
+% Définition des couleurs pour les titres
+\chapterfont{\color{blue}}
+\sectionfont{\color{teal}}
+
+% Définition des couleurs pour le tableau
+\definecolor{lightgray}{gray}{0.9}
+\definecolor{tablehead}{rgb}{0.8,0.8,1}
+\definecolor{tablerow}{rgb}{0.9,0.9,1}
+
+\title{\textcolor{blue}{Compte Rendu n°3 du Génie Logiciel}}
+\author{\textcolor{black}{DERMOUCHE Mohammed Ryad}\\Université Paris Cité\\L3 Informatique et Applications UFR Maths-Info}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\chapter*{\textcolor{blue}{Première Partie}}
+\section*{\textcolor{teal}{1. Les activités effectuées et non effectuées}}
+
+\begin{itemize}
+    \item \textbf{Définition des objectifs} : Les objectifs du projet ont été définis pour résoudre le problème de coloration des graphes à l'aide de la logique propositionnelle.
+    \item \textbf{Analyse des exigences} : L'analyse des exigences a été insuffisante, les besoins n'ont pas été clairement définis dès le début du projet.
+    \item \textbf{Analyse de faisabilité} : Aucune analyse de faisabilité formelle n'a été réalisée, ce qui a conduit à des problèmes d'intégration et de compatibilité.
+    \item \textbf{Spécifications des exigences} : Les exigences fonctionnelles et non fonctionnelles n'ont pas été correctement spécifiées, ce qui a complexifié le développement.
+    \item \textbf{Conception} : Une conception initiale du projet a été réalisée, mais elle s'est avérée inadéquate pour l'intégration des nouvelles fonctionnalités.
+    \item \textbf{Implémentation} : Le code a été implémenté en Python, avec des bibliothèques utilisées pour visualiser les graphes.
+    \item \textbf{Tests unitaires} : Des tests unitaires ont été partiellement envisagés, mais ils n'ont pas couvert tout le code.
+    \item \textbf{Intégration} : L'intégration a été réalisée, mais elle a rencontré des difficultés en raison de problèmes de compatibilité entre les bibliothèques.
+    \item \textbf{Validation} : Aucune validation finale complète n'a été réalisée pour s'assurer que le projet répondait aux exigences définies.
+    \item \textbf{Déploiement} : Le déploiement n'a pas été réalisé.
+    \item \textbf{Maintenance} : Aucune mention de la maintenance du projet n'a été faite, faute de temps pour revoir le projet après la soutenance.
+\end{itemize}
+
+\subsection*{\textcolor{teal}{Raisons possibles pour l'absence de certaines activités}}
+\begin{itemize}
+    \item Manque de connaissances en gestion de projet
+    \item Pression du temps et des ressources
+    \item Focalisation sur l'aspect technique
+    \item Manque d'expérience avec les méthodologies de développement
+\end{itemize}
+
+\subsection*{\textcolor{teal}{Conséquences de l'absence de ces activités}}
+\begin{itemize}
+    \item Problèmes techniques imprévus
+    \item Retards dans le projet
+    \item Qualité et performance du logiciel affectées
+    \item Sans déploiement ni maintenance, le logiciel risque de ne pas être durable, ce qui entraîne une mauvaise satisfaction des utilisateurs
+\end{itemize}
+
+\section*{\textcolor{teal}{2. Le temps personnes en heures}}
+\begin{table}[h]
+\centering
+\rowcolors{2}{tablerow}{white}
+\begin{tabularx}{\textwidth}{|l|c|X|}
+\hline
+\rowcolor{tablehead}
+\textbf{Activité} & \textbf{Heures} & \textbf{Normes} \\
+\hline
+Définition des objectifs & 6 & Conforme \\
+Analyse des exigences & 3 & Sous-estimée \\
+Analyse de faisabilité & 0 & Non réalisée \\
+Spécifications des exigences & 2 & Sous-estimée \\
+Conception & 12 & Sous-estimée \\
+Implémentation & 50 & Conforme \\
+Tests unitaires & 9 & Sous-estimée \\
+Intégration & 16 & Légèrement sous-estimée \\
+Validation & 0 & Non réalisée \\
+Déploiement & 0 & Non réalisée \\
+Maintenance & 0 & Non réalisée \\
+\hline
+\end{tabularx}
+\end{table}
+
+\section*{\textcolor{teal}{3. Modèle de cycle utilisé}}
+Le modèle en cascade (\textit{Waterfall}) a été utilisé pour ce projet.
+
+\subsection*{\textcolor{teal}{Pourquoi ce modèle a-t-il été utilisé ?}}
+\begin{itemize}
+    \item \textbf{Approche simple} : Facile à gérer et à suivre, surtout pour les petits projets avec des exigences stables.
+    \item \textbf{Manque de flexibilité} : Le projet n'a pas connu de modifications fréquentes des exigences, ce qui correspond à l'approche du modèle en cascade.
+    \item \textbf{Absence d'itérations} : Il n'y avait pas de retours en arrière ou de révisions continues, typique du modèle en cascade.
+\end{itemize}
+
+\subsection*{\textcolor{teal}{Aurait-il été possible d’utiliser un autre modèle ?}}
+Oui, le modèle en V aurait pu être utilisé. Ce modèle aurait permis :
+\begin{itemize}
+    \item Une validation rigoureuse à chaque étape.
+    \item Une réduction des erreurs liées aux graphes complexes, limitant les sessions de débogage intensives.
+    \item Une détection plus précoce des problèmes, chaque phase de développement étant liée à une phase de test.
+    \item Une réduction des bugs imprévus pendant l'intégration finale.
+\end{itemize}
+
+\chapter*{\textcolor{blue}{Deuxième Partie}}
+
+\section*{\textcolor{teal}{1. Projet choisi et équipe}}
+Nous avons choisi de travailler sur le premier projet, et notre équipe est composée de :
+\begin{itemize}
+    \item \textbf{OUBERKA Mohamed}
+    \item \textbf{DERMOUCHE Mohammed Ryad}
+    \item \textbf{BOUCHELLAL Imad-Eddine}
+\end{itemize}
+
+\section*{\textcolor{teal}{2. Exigences fonctionnelles}}
+\begin{itemize}
+    \item Le logiciel doit permettre aux clients de passer facilement leurs commandes.
+    \item Les clients doivent pouvoir choisir la langue de commande.
+    \item Le logiciel doit permettre aux clients de suivre l'état d'avancement de leur commande.
+    \item Les clients fidèles doivent pouvoir suivre leurs points accumulés et les utiliser pour des réductions.
+    \item Afficher le prix, la photo, et les ingrédients de chaque article ainsi que des remarques sur les allergies.
+    \item Permettre aux clients de créer un compte de fidélité.
+    \item Permettre aux serveurs et aux managers de s’authentifier.
+    \item Le personnel doit pouvoir suivre les arrivées et l'utilisation du stock en termes de quantité, articles, emplacements, prix.
+    \item Suivi des serveurs : temps de travail, nombre de tables servies.
+    \item Calcul du chiffre d'affaires, salaires des employés, et dépenses de matières premières.
+    \item Connexion à la borne de paiement sans contact.
+\end{itemize}
+
+\section*{\textcolor{teal}{3. Exigences non-fonctionnelles}}
+\begin{itemize}
+    \item Le logiciel doit être une application mobile/tablette compatible avec Android.
+    \item Le logiciel doit être fiable et avoir une disponibilité de 99,5 \%.
+    \item Il doit être scalable pour des futures mises à jour.
+    \item Conformité au RGPD (Règlement Général sur la Protection des Données).
+    \item Le temps de réponse doit être optimal (moins de 5 secondes).
+    \item Capacité à monter en charge quand la quantité d’utilisateurs simultanés augmente.
+    \item Le temps de prise de commande doit être instantané, avec transmission directe à la cuisine.
+    \item Chargement des menus rapide (moins de 1 seconde).
+    \item En cas de panne ou de perte de connexion, l’application doit pouvoir se reconnecter rapidement.
+\end{itemize}
+
+\section*{\textcolor{teal}{4. Exigences techniques}}
+\begin{itemize}
+    \item Le logiciel doit être codé en \textbf{Flutter}.
+    \item Le logiciel doit être hébergé sur \textbf{AWS}.
+\end{itemize}
+
+\section*{\textcolor{teal}{5. Exigences de sécurité}}
+\subsection*{\textcolor{teal}{Protection des comptes client}}
+\begin{itemize}
+    \item Authentification sécurisée via mot de passe fort ou OAuth (Google, Facebook).
+    \item Système de réinitialisation de mot de passe sécurisé.
+    \item Authentification à deux facteurs (2FA) proposée.
+\end{itemize}
+
+\subsection*{\textcolor{teal}{Sécurité du programme de fidélité}}
+\begin{itemize}
+    \item Accumulation automatique des points à chaque commande, consultable dans un espace sécurisé.
+    \item Les points peuvent être échangés contre des réductions sur des commandes futures.
+    \item Protection des données et anti-fraude : chiffrement des données et surveillance des activités suspectes.
+\end{itemize}
+
+\end{document}
